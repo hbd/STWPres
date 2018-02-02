@@ -8,9 +8,9 @@
 ## Goals for Presentation
 
 <ol>
-<li class="fragment" data-fragment-index="1">Present an overview of the design and development process [<span style="color:gray">OCPUTask</span>]</li>
+<li class="fragment" data-fragment-index="1">Present an overview of the design and development process</li>
 <li class="fragment" data-fragment-index="2">Give you an idea of the app architecture, Elasticsearch container service, and build/test/release pipeline</li>
-<li class="fragment" data-fragment-index="3">Periodically share lessons I learned throughout the process[<span style="color:gray">OCPUResult</span>]</li>
+<li class="fragment" data-fragment-index="3">Periodically share lessons I learned throughout the process</li>
 </ol>
 
 ---
