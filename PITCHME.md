@@ -43,7 +43,7 @@ Note:
 
 ---
 
-### Whiteboard Night
+#### Whiteboard Night
 
 CEO Shares Vision
 
@@ -77,7 +77,7 @@ Mockups with Balsamiq & Google Drive
 
 #### Lesson 0
 
-*Lesson 1: When working between technical and non-technical people, designs can serve as a rich form of communication*
+*Designs serve as a rich form of communication, and a meeting point between technical and non-techinal people*
 
 ---
 
@@ -135,7 +135,7 @@ JS Wrappers: Take Method and Module Name, Arguments, and Add it To Message Queue
 
 Native Builds This Module
 
-e.g. <View> in RN Maps to: UIView (iOS), <div> (Chrome), android.view (Android)
+e.g. \<View\> in RN Maps to: UIView (iOS), <div> (Chrome), android.view (Android)
 
 ---
 
@@ -308,7 +308,7 @@ React Native was a good choice for:
 
 * Testing
 * Start at the Router
-* Git-like Tracking is The Standard, and Track Everything
+* Git-like Tracking is the Standard, and Track Everything
 
 
 ---
