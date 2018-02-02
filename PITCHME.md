@@ -93,34 +93,6 @@ Know FE Web? React? Great.
 
 ---
 
-#### JSX
-
-```jsx
-   render() {
-    /* Navigate to the search result page, passing searchText and searchResults as props */
-    const goToSearchResults = () => Actions.searchView({ searchText: this.state.searchText,
-							 searchResults: this.state.searchResults })
-
-    if (!this.state.loaded) {
-      return this.renderLoadingView()
-    }
-
-    return (
-      <View style={Styles.modalContainer}>
-        <View style={{borderColor: '#303030'}}>
-          <Sae
-            label={'Search for a Product'}
-            height={38}
-            onChangeText={(text) => this.setState({searchText: text})}
-            iconClass={FontAwesomeIcon}
-            iconName={'search'}
-            iconColor={'white'}
-```
-
----
-
-#### JavaScript
-
 ```javascript
     render() {
         /* Navigate to the search result page, passing searchText and searchResults as props */
