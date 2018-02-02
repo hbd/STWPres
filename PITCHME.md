@@ -45,7 +45,7 @@ Mockups
 
 ---
 
-![login](assets/home.jpg)
+![login](assets/home.png)
 
 ---
 
