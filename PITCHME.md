@@ -3,15 +3,25 @@
 ### Biography of a React-Native App
 <span style="color:gray">The story of GroupThreads Mobile Dash</span>
 
+Note:
+influenctial time
+
 ---
 
 #### Goals for Presentation
 
 <ol>
-<li class="fragment" data-fragment-index="1">Present an overview of the design and development process</li>
-<li class="fragment" data-fragment-index="2">Give you an idea of the app architecture, Elasticsearch container service, and build/test/release pipeline</li>
-<li class="fragment" data-fragment-index="3">Periodically share lessons I learned throughout the process</li>
+<li class="fragment" data-fragment-index="1">Overview of the design and development process</li>
+<li class="fragment" data-fragment-index="2">App architecture, Elasticsearch container service, and build/test/release pipeline</li>
+<li class="fragment" data-fragment-index="3">Share lessons I learned throughout the process</li>
 </ol>
+
+Note:
+- worked for 1 semester
+- Overview of the design and development process
+- App architecture, Elasticsearch container service, and build/test/release pipeline
+- Share lessons I learned throughout the process
+
 
 ---
 
@@ -30,13 +40,13 @@ a custom apparel company
 for greek life and spirit groups on campuses 
 in Texas and other colleges in the South. 
 
-+++
+---
 
 ##### GroupThreads
 
-<p class="fragment" data-fragment-index="1">Disruptors in Custom Apparel Industry</p>
-<p class="fragment" data-fragment-index="2">Distributed Sales Rep Model</p>
-<p class="fragment" data-fragment-index="3">High Growth, Investment, Ready for Mobile</p>
+Disruptors in Custom Apparel Industry
+Distributed Sales Rep Model
+High Growth, Investment, Ready for Mobile
 
 Note:
 GroupThreads considered disruptors in the industry of custom apparel 
@@ -53,8 +63,8 @@ Capital Factory’s prestigious startup incubator program.
 
 #### High-Growth -> Need for Better Technology
 
-<p class="fragment" data-fragment-index="1">Angular App Not Mobile-Friendly</p>
-<p class="fragment" data-fragment-index="2">Investors Like Mobile Apps</p>
+Angular App Not Mobile-Friendly
+Investors Like Mobile Apps
 
 
 Note:
@@ -67,3 +77,5 @@ simpler mobile interface for
 Late August, contract signed, building started
 
 ---
+
+### 
