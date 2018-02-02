@@ -1,7 +1,7 @@
 ---
 
-### Biography of a React-Native App
-<span style="color:gray">The story of GroupThreads Mobile Dash</span>
+### Biography of a React Native App
+<span style="color:gray">The Story of GroupThreads Dash</span>
 
 Note:
 influenctial time
@@ -95,14 +95,6 @@ Know FE Web? React? Great.
 
 ```javascript
     render() {
-        /* Navigate to the search result page, passing searchText and searchResults as props */
-        const goToSearchResults = () => Actions.searchView({ searchText: this.state.searchText,
-          searchResults: this.state.searchResults });
-    
-        if (!this.state.loaded) {
-          return this.renderLoadingView();
-        }
-    
         return React.createElement(
           View,
           { style: Styles.modalContainer },
@@ -120,14 +112,6 @@ Know FE Web? React? Great.
 
 ```jsx
    render() {
-    /* Navigate to the search result page, passing searchText and searchResults as props */
-    const goToSearchResults = () => Actions.searchView({ searchText: this.state.searchText,
-							 searchResults: this.state.searchResults })
-
-    if (!this.state.loaded) {
-      return this.renderLoadingView()
-    }
-
     return (
       <View style={Styles.modalContainer}>
         <View style={{borderColor: '#303030'}}>
