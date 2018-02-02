@@ -18,7 +18,9 @@ Developing Core Principles
 #### Context
 
 Coffeeshop Meeting with Keagan, Co-Founder GroupThreads
+
 GroupThreads' Distruptive Model
+
 High-Growth -> Need for Better Technology
 
 Note:
@@ -29,7 +31,9 @@ Keagan was CMO
 #### Mobile App
 
 Desktop Angular 1.0 Web App
+
 Providing a Mobile Experience
+
 Investors
 
 Note:
@@ -41,6 +45,7 @@ Note:
 ### Whiteboard Night
 
 CEO Shares Vision
+
 Mockups
 
 ---
@@ -52,7 +57,9 @@ Mockups
 #### The React-Native Decision
 
 Experience with Golang on Mobile
+
 Surveying Future Users
+
 Enthusiasm About Cross-Platform
 
 ---
