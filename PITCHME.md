@@ -129,6 +129,10 @@ Native -(JSON)-> JavaScript -(JSON)-> Native -> Execute Commands & Update UI
 
 ---
 
+![bridge](assets/reactpipeline.png)
+
+---
+
 #### How Components Work
 
 JS Wrappers: Take Method and Module Name, Arguments, and Add it To Message Queue
@@ -308,7 +312,7 @@ React Native was a good choice for:
 
 * Testing
 * Start at the Router
-* Git-like Tracking is the Standard, and Track Everything
+* Git-like Tracking is the Standard; Track Everything
 
 
 ---
