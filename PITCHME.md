@@ -75,13 +75,124 @@ Mockups
 
 ---
 
-#### The React-Native Decision
+#### The React Native Decision
 
 Experience with Golang on Mobile
 
 Surveying Future Users
 
-Enthusiasm About Cross-Platform
+Enthusiasm About Cross-Platform Mobile Tech
+
+---
+
+#### What Distinguishes React Native
+
+Know FE Web? React? Great.
+
+"Learn Once, Write Anywhere"
+
+---
+
+#### JSX
+
+```jsx
+   render() {
+    /* Navigate to the search result page, passing searchText and searchResults as props */
+    const goToSearchResults = () => Actions.searchView({ searchText: this.state.searchText,
+							 searchResults: this.state.searchResults })
+
+    if (!this.state.loaded) {
+      return this.renderLoadingView()
+    }
+
+    return (
+      <View style={Styles.modalContainer}>
+        <View style={{borderColor: '#303030'}}>
+          <Sae
+            label={'Search for a Product'}
+            height={38}
+            onChangeText={(text) => this.setState({searchText: text})}
+            iconClass={FontAwesomeIcon}
+            iconName={'search'}
+            iconColor={'white'}
+```
+
+---
+
+#### JavaScript
+
+```javascript
+    render() {
+        /* Navigate to the search result page, passing searchText and searchResults as props */
+        const goToSearchResults = () => Actions.searchView({ searchText: this.state.searchText,
+          searchResults: this.state.searchResults });
+    
+        if (!this.state.loaded) {
+          return this.renderLoadingView();
+        }
+    
+        return React.createElement(
+          View,
+          { style: Styles.modalContainer },
+          React.createElement(
+            View,
+            { style: { borderColor: '#303030' } },
+            React.createElement(Sae, {
+              label: 'Search for a Product',
+              height: 38,
+              onChangeText: text => this.setState({ searchText: text }),
+              iconClass: FontAwesomeIcon,
+              iconName: 'search',
+              iconColor: 'white',
+```
+
+```jsx
+   render() {
+    /* Navigate to the search result page, passing searchText and searchResults as props */
+    const goToSearchResults = () => Actions.searchView({ searchText: this.state.searchText,
+							 searchResults: this.state.searchResults })
+
+    if (!this.state.loaded) {
+      return this.renderLoadingView()
+    }
+
+    return (
+      <View style={Styles.modalContainer}>
+        <View style={{borderColor: '#303030'}}>
+          <Sae
+            label={'Search for a Product'}
+            height={38}
+            onChangeText={(text) => this.setState({searchText: text})}
+            iconClass={FontAwesomeIcon}
+            iconName={'search'}
+            iconColor={'white'}
+```
+
+
+---
+
+#### Starting with a Boiler Plate
+
+Choosing a Boiler Plate
+
+React Native Bloat
+
+Minimal Templating
+
+---
+
+#### Ignite
+
+Redux: Sagas, Reducers, Actions
+
+Note:
+Ask how much they know about this pattern
+
+---
+
+#### Saga
+
+
 
 ---
 
