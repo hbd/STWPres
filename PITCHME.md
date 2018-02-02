@@ -12,8 +12,9 @@ influenctial time
 
 <ol>
 <li class="fragment" data-fragment-index="1">Overview of the design and development process</li>
-<li class="fragment" data-fragment-index="2">App architecture, Elasticsearch container service, and build/test/release pipeline</li>
-<li class="fragment" data-fragment-index="3">Share lessons I learned throughout the process</li>
+<li class="fragment" data-fragment-index="2">Mobile Framework Decision Making Process</li>
+<li class="fragment" data-fragment-index="3">App architecture, Elasticsearch container service, and build/test/release pipeline</li>
+<li class="fragment" data-fragment-index="4">Share lessons I learned throughout the process</li>
 </ol>
 
 Note:
