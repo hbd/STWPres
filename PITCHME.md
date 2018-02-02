@@ -52,6 +52,17 @@ Mockups
 ---
 
 ![login](assets/home.png)
+![login_actual](assets/home_actual.png)
+
+---
+
+![calculator](assets/calculator.png)
+![calculator_actual](assets/calculator_actual.png)
+
+---
+
+![product_page](assets/product_page.png)
+![product_page_actual](assets/product_page_actual.png)
 
 ---
 
