@@ -11,6 +11,7 @@ influenctial time
 #### This is a Story
 
 React Native and Leading Tech Decisions
+
 Developing Core Principles
 
 ---
