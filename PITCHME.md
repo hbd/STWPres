@@ -47,7 +47,7 @@ Note:
 
 CEO Shares Vision
 
-Mockups
+Mockups with Balsamiq & Google Drive
 
 ---
 
@@ -81,7 +81,11 @@ Experience with Golang on Mobile
 
 Surveying Future Users
 
-Enthusiasm About Cross-Platform Mobile Tech
+---
+
+#### Lesson 0
+
+*Don’t decide on using a cross-platform mobile technology until you know who is going to be using the app*
 
 ---
 
@@ -89,9 +93,44 @@ Enthusiasm About Cross-Platform Mobile Tech
 
 Know FE Web? React? Great.
 
-"Learn Once, Write Anywhere"
+Open Source, Big Community
+
+The Real Deal: A Native Experience
+
+Code Push
+
+Better Than Golang on Mobile
 
 ---
+
+#### Achieving a Native Experience
+
+Your Phone is Running React with JavaScript Core
+
+JavaScript is Doing the Business Logic
+
+React Problem: Need to Sync Virtual DOM to UIKit, Asynchronously
+
+The Solution: A Message Queue
+
+---
+
+#### The Bridge: JavaScript Communicating with Native
+
+Events Registered in Native Code (touches, network calls, etc.)
+
+Asynchronous API (to Native), Batched Messages, Exchange Serializable Messages
+
+Native -(JSON)-> JavaScript -(JSON)-> Native -> Execute Commands & Update UI
+
+JS Wrappers: Take Method and Module Name, Arguments, and Add it To Message Queue
+
+---
+
+
+
+---
+
 
 ```javascript
     render() {
@@ -124,22 +163,25 @@ Know FE Web? React? Great.
             iconColor={'white'}
 ```
 
-
 ---
 
 #### Starting with a Boiler Plate
 
 Choosing a Boiler Plate
 
-React Native Bloat
-
-Minimal Templating
+Minimal Templates
 
 ---
 
 #### Ignite
 
+Reusable Components
+
 Redux: Sagas, Reducers, Actions
+
+---
+
+#### 
 
 Note:
 Ask how much they know about this pattern
@@ -148,7 +190,19 @@ Ask how much they know about this pattern
 
 #### Saga
 
-
+```jsx
+// Generator in the LoginSaga
+// Waits for the Login button press
+export function * watchLoginAttempt () {
+    // daemonize
+    while (true) {
+      // wait for LOGIN_ATTEMPT actions to arrive
+      const { username, password } = yield take(Types.LOGIN_ATTEMPT)
+      // call attemptLogin to perform the actual work
+      yield call(attemptLogin, username, password)
+    }
+  }
+```
 
 ---
 
