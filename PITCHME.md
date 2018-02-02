@@ -79,6 +79,8 @@ Mockups with Balsamiq & Google Drive
 
 *Lesson 1: When working between technical and non-technical people, designs can serve as a rich form of communication*
 
+---
+
 #### The React Native Decision
 
 Experience with Golang on Mobile
@@ -165,23 +167,28 @@ Ask how much they know about this pattern
 #### Actions
 
 ```javascript
-// The function that is called when the login button is pressed
+// The function that is called when the login button is 
+// pressed
 handlePressLogin = () => {
     const { username, password } = this.state
     this.isAttempting = true
 
-    // attempt a login - a saga is listening to pick it up from here
-    // attemptLogin prop is mapped to a dispatch in mapDispatchToProps
+    // attempt a login - a saga is listening to pick it 
+    // up from here
+    // attemptLogin prop is mapped to a dispatch in 
+    // mapDispatchToProps
     this.props.attemptLogin(username, password)
     }
 
     ...
 
-    // This maps the attemptLogin prop to the attemptLogin Action
+    // This maps the attemptLogin prop to the 
+    // attemptLogin Action
     const mapDispatchToProps = (dispatch) => {
         return {
             logout: NavigationActions.logout,
-            attemptLogin: (username, password) => dispatch(Actions.attemptLogin(username, password))
+            attemptLogin: (username, password) => 
+            dispatch(Actions.attemptLogin(username, password))
         }
     }
 }
@@ -198,7 +205,8 @@ export function * watchLoginAttempt () {
     // daemonize
     while (true) {
       // wait for LOGIN_ATTEMPT actions to arrive
-      const { username, password } = yield take(Types.LOGIN_ATTEMPT)
+      const { username, password } = 
+                    yield take(Types.LOGIN_ATTEMPT)
       // call attemptLogin to perform the actual work
       yield call(attemptLogin, username, password)
     }
@@ -279,7 +287,7 @@ saves time
 
 ---
 
-#### Retrospective
+### Retrospective
 
 ##### The Good
 
@@ -291,6 +299,10 @@ saves time
 Note:
 React Native was a good choice for:
 - Time and team friendliness - other developer could help
+
+---
+
+### Retrospective
 
 ##### Points for Improvement
 
