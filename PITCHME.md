@@ -155,6 +155,9 @@ Minimal Templates
 
 ![firstcommit](assets/first_commits.png)
 
+Note:
+This allows for streaming applications over the web
+
 ---
 
 #### Ignite
