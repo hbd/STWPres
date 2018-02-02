@@ -25,9 +25,11 @@ Note:
 
 ---
 
-#### Inception
+#### Context
 
 <p class="fragment" data-fragment-index="1">Coffeeshop Meeting with Keagan, Co-Founder GroupThreads</p>
+<p class="fragment" data-fragment-index="2">GroupThreads Distruptive Distributed Model</p>
+<p class="fragment" data-fragment-index="3">High-Growth -> Need for Better Technology</p>
 
 Note:
 It all started on July 19, 2016, 
@@ -42,10 +44,12 @@ in Texas and other colleges in the South.
 
 ---
 
-##### GroupThreads
+<!-- ##### GroupThreads
 
 Disruptors in Custom Apparel Industry
+
 Distributed Sales Rep Model
+
 High Growth, Investment, Ready for Mobile
 
 Note:
@@ -61,9 +65,10 @@ Capital Factory’s prestigious startup incubator program.
 
 ---
 
-#### High-Growth -> Need for Better Technology
+#### 
 
 Angular App Not Mobile-Friendly
+
 Investors Like Mobile Apps
 
 
@@ -78,4 +83,4 @@ Late August, contract signed, building started
 
 ---
 
-### 
+###  -->
