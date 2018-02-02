@@ -151,15 +151,6 @@ Minimal Templates
 
 ---
 
-#### Up And Running
-
-![firstcommit](assets/first_commits.png)
-
-Note:
-This allows for streaming applications over the web
-
----
-
 #### Ignite
 
 Reusable Components
@@ -168,6 +159,15 @@ Redux: Sagas, Reducers, Actions
 
 Note:
 Ask how much they know about this pattern
+
+---
+
+#### Up And Running
+
+![firstcommit](assets/first_commits.png)
+
+Note:
+This allows for streaming applications over the web
 
 ---
 
