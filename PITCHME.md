@@ -75,6 +75,10 @@ Mockups with Balsamiq & Google Drive
 
 ---
 
+#### Lesson 0
+
+*Lesson 1: When working between technical and non-technical people, designs can serve as a rich form of communication*
+
 #### The React Native Decision
 
 Experience with Golang on Mobile
@@ -83,7 +87,7 @@ Surveying Future Users
 
 ---
 
-#### Lesson 0
+#### Lesson 1
 
 *Don’t decide on using a cross-platform mobile technology until you know who is going to be using the app*
 
@@ -111,8 +115,6 @@ JavaScript is Doing the Business Logic
 
 React Problem: Need to Sync Virtual DOM to UIKit, Asynchronously
 
-The Solution: A Message Queue
-
 ---
 
 #### The Bridge: JavaScript Communicating with Native
@@ -123,45 +125,15 @@ Asynchronous API (to Native), Batched Messages, Exchange Serializable Messages
 
 Native -(JSON)-> JavaScript -(JSON)-> Native -> Execute Commands & Update UI
 
+---
+
+#### How Components Work
+
 JS Wrappers: Take Method and Module Name, Arguments, and Add it To Message Queue
 
----
+Native Builds This Module
 
-
-
----
-
-
-```javascript
-    render() {
-        return React.createElement(
-          View,
-          { style: Styles.modalContainer },
-          React.createElement(
-            View,
-            { style: { borderColor: '#303030' } },
-            React.createElement(Sae, {
-              label: 'Search for a Product',
-              height: 38,
-              onChangeText: text => this.setState({ searchText: text }),
-              iconClass: FontAwesomeIcon,
-              iconName: 'search',
-              iconColor: 'white',
-```
-
-```jsx
-   render() {
-    return (
-      <View style={Styles.modalContainer}>
-        <View style={{borderColor: '#303030'}}>
-          <Sae
-            label={'Search for a Product'}
-            height={38}
-            onChangeText={(text) => this.setState({searchText: text})}
-            iconClass={FontAwesomeIcon}
-            iconName={'search'}
-            iconColor={'white'}
-```
+e.g. <View> in RN Maps to: UIView (iOS), <div> (Chrome), android.view (Android)
 
 ---
 
@@ -173,24 +145,53 @@ Minimal Templates
 
 ---
 
+#### Up And Running
+
+![firstcommit](assets/first_commits.png)
+
+---
+
 #### Ignite
 
 Reusable Components
 
 Redux: Sagas, Reducers, Actions
 
----
-
-#### 
-
 Note:
 Ask how much they know about this pattern
 
 ---
 
+#### Actions
+
+```javascript
+// The function that is called when the login button is pressed
+handlePressLogin = () => {
+    const { username, password } = this.state
+    this.isAttempting = true
+
+    // attempt a login - a saga is listening to pick it up from here
+    // attemptLogin prop is mapped to a dispatch in mapDispatchToProps
+    this.props.attemptLogin(username, password)
+    }
+
+    ...
+
+    // This maps the attemptLogin prop to the attemptLogin Action
+    const mapDispatchToProps = (dispatch) => {
+        return {
+            logout: NavigationActions.logout,
+            attemptLogin: (username, password) => dispatch(Actions.attemptLogin(username, password))
+        }
+    }
+}
+```
+
+---
+
 #### Saga
 
-```jsx
+```javascript
 // Generator in the LoginSaga
 // Waits for the Login button press
 export function * watchLoginAttempt () {
@@ -203,6 +204,100 @@ export function * watchLoginAttempt () {
     }
   }
 ```
+---
+
+#### Business Logic
+
+```javascript
+// Code that watchLoginAttempt generator calls upon activation
+// attempts to login
+export function * attemptLogin (username, password) {
+    var loginSuccess = false
+  
+    yield fetch('http://localhost:1337' + '/admin/login/', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        email: username,
+        password: password
+      }),
+      credentials: 'include'
+    }).then((response) => {
+```
+
+---
+
+#### Search
+
+Defining Search
+
+Elasticsearch, Algolia, Apache Solr
+
+RESTful and Free
+
+Note:
+filtering, search, what do you want?
+
+---
+
+#### Reflecting a MongoDB in Elasticsearch
+
+Mongo Connector
+
+Microservice Architecture Using Docker and Rancher
+
+Getting Containers to Play Nice
+
+Note:
+Mongo Connector does initial sync and tails MongoDB tx log
+
+When a container goes down, we bring both down and hard reset
+
+Must make the containers a mutually reliable pair
+
+---
+
+#### Fastlane: Automating a Pipeline
+
+Build/Test/Release, Rinse, Repeat
+
+A Boring, Reliable, Standardized Process Feels Good
+
+Note:
+Describe TestFlight process (automated, communication)
+
+---
+
+#### Lesson 2:
+
+*Create a “pull” process in getting feedback, whenever possible*
+
+Note:
+saves time
+
+---
+
+#### Retrospective
+
+##### The Good
+
+* Mockups
+* React/React Native
+* Fastlane
+* Rancher
+
+Note:
+React Native was a good choice for:
+- Time and team friendliness - other developer could help
+
+##### Points for Improvement
+
+* Testing
+* Start at the Router
+* Git-like Tracking is The Standard, and Track Everything
+
 
 ---
 
