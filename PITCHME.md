@@ -135,7 +135,7 @@ JS Wrappers: Take Method and Module Name, Arguments, and Add it To Message Queue
 
 Native Builds This Module
 
-e.g. \<View\> in RN Maps to: UIView (iOS), <div> (Chrome), android.view (Android)
+e.g. `<View>` in RN Maps to: UIView (iOS), <div> (Chrome), android.view (Android)
 
 ---
 
